@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-doc {
+    margin-left: 220px; /* Leave space for the navbar */
+    padding: 20px;
+    width: calc(100% - 220px); /* Adjust main content width */
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section h2 {
+    margin-top: 0;
+}
+
+/* Styling for nav links */
+.nav-link {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
